@@ -44,3 +44,22 @@ public class Main {
     }
 } 
 
+Q5.Take a user input and print your name.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]{
+Scanner sc=new Scanner(System.in);
+String name=sc.next();
+System.out.println(name);//It will print only a single word without spaces. It cannot print sentences.
+}
+}
+
+Q6.Take a user input and print your college name.
+import java.util.Scanner;
+class Main{
+public satic void main(String args[]){
+Scanner sc=new Scanner(System.in);
+String name=sc.nextLine();
+System.out.println(name);
+}
+}
