@@ -63,3 +63,124 @@ String name=sc.nextLine();
 System.out.println(name);
 }
 }
+
+//Conditional Statements.
+Q7.Take a user input and print "Adult"if the age of  the person is equal to or above 18 else print "Not an Adult".
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int age=sc.nextInt();
+if(age >=18){
+System.out.println("An Adult");
+}else{
+System.out.println("Not an Adult");
+}
+}
+}
+
+Q8.Check whether a given number is even or not.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int x=sc.nextInt();
+if(x%2==0){
+System.out.println("Even");
+}else{
+System.out.println("Oddd");
+}
+}
+}
+
+Q9.Take a user input and check if the numbers are less than,greater than or equal to each other.
+import java. util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new canner(System.in);
+int a =sc.NextInt();
+int b=sc.nextInt();
+if(a>b){
+System.out.println(a+"is greater than"+b);
+}
+elseif(a<b){
+System.out.println(a+"is less than"+b);
+}
+else{
+System.out.println(a+"is equal to"+b);
+}
+}
+}
+Q10.Take a user input and print the days in a week using witch statement.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+switch(n){
+case 1:
+System.out.println("Monday");
+break;
+case 2:
+System.out.println("Tuesday");
+break;
+case 3:
+System.out.println("Wednesday");
+break;
+case 4:
+System.out.println("Thursday");
+break;
+case 5:
+System.out.println("Friday");
+break;
+case 6:
+System.out.println("Saturday");
+break;
+case 7:
+System.out.println("Sunday");
+break;
+default:
+System.out.println("Invalid Entry");
+break;
+}
+}
+}
+
+//Loops
+Q11.Take user input and print hello world using "for,while,do while" loops;
+//for loops
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("How many times do you want the text to be printed");
+int n=sc.nextInt();
+for (int i=1;i<=n;i++){
+System.out.println("Hello World");
+}
+}
+}
+// while loops
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("How many times do you want the text to be printed");
+int n=sc.nextInt();
+int i=1;
+while(i<n){
+System.out.println("Hello World");
+i++;
+}
+}
+}
+//do while loops
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int i=1;
+do{
+
+
