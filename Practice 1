@@ -257,7 +257,127 @@ System.out.print(c);
 }
 }
 
-Q16.
+Q16.WWrite a small program on arrays.
+//Introduction to Arrays
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int arr[]=new int[3];
+int arr[0]=92;
+int arr[1]=77;
+int arr[2]=13;
+System.out.println(arr);//The console willonly show the memory address of the variable.
+System.out.println(arr[0]);
+System.out.println(arr[1]);
+System.out.println(arr[2]);
+}
+}
+
+Q17.Take a user input and print marks in the form of an array.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("What is the size of the array");
+int n=sc.nextInt();
+int arr[]=new int[n];
+System.out.println("What are the values in the array");
+for(int i=0;i<n;i++){
+arr[i]=sc.nextInt();
+}
+for(int i=0;i<n;i++){
+System.out.println(arr[i]);
+}
+}
+}
+
+Q18.Take an input from the user(array).Search for a given number x and pint the index at which it occurs.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("What is the size of the array");
+int n=sc.nextInt();
+int arr[]=new int[n];
+System.out.println("What are the values you want in the array");
+for (int i=0;i<n;i++){
+arr[i]=sc.nextInt();
+}
+System.out.println("Element to search");
+int x=sc.nextInt();
+for(int i=0;i<n;i++){
+if(arr[i]==x){
+System.out.println(x+" is found at index "+i);
+}
+}
+}
+}
+
+Q19.Print a 2D array.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("How many rows do you want");
+int n=sc.nextInt();
+System.out.println("How many columns do you want");
+int m=sc.nextInt();
+int arr[][]=new int[n][m];
+for(int i=0;i<n;i++){
+for(int j=0;j<m;j++){
+arr[i][j]=sc.nextInt();
+}
+}
+for(int i=0;i<n;i++){
+for(int j=0;j<m;j++){
+System.out.print(arr[i][j]);
+}
+System.out.println();
+}
+}
+}
+
+Q20.Take a matrix as input from the user.Search for a given number x and print the indices at which it occurs.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("How many rows do you want");
+int n=sc.nextInt();
+System.out.println("How many columns do you want");
+int m=sc.nextInt();
+int arr[][]=new int[n][m];
+System.out.println("What are the values in the array");
+for(int i=0;i<n;i++){
+for(int j=0;j<m;j++){
+arr[i][j]=sc.nextInt();
+}
+}
+System.out.println("Element to find");
+int x=sc.nextInt();
+boolean found=false;
+for(int i=0;i<n;i++){
+for(int j=0;j<m;j++){
+if(arr[i][j]==x){
+System.out.println("Element found at index"+" "+i+" "+ j);
+found=true;
+}
+}
+}
+if(!found){
+System.out.println("Element not found");
+}
+}
+}
+
+
+
+
+
+
+
+
 
 
 
