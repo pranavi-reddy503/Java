@@ -383,7 +383,7 @@ System.out.println(name.length());
 }
 }
 
-//To print all thecharacters of your name one after the other we use charAt() function.
+//To print all the characters of your name one after the other we use charAt() function.
 Q22.Print your name character by character in java.
 import java.util.Scanner;
 class Main{
@@ -398,6 +398,23 @@ System.out.println(name.charAt(i));
 }
 
 //In oder to compare 2 strings we have to use .compareTo() function
+Q23.Take 2 predefined strings and compare them.
+class Main{
+public static void main(String args[]){
+String name="Pranavi";
+String name2="Reddy";
+System.out.println(name.compareTo(name2));
+}
+}
+
+//In order to get a small string from a big string we need to use.substring(index,final index)
+Q24.Take an input and print a small string from a big one.
+class Main{
+public static void main(String args[]){
+String s1="My bestfriend is Aishwarya";
+System.out.println(s1.substring(17,s1.length()));
+}
+}
 
 
 
