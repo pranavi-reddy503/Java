@@ -583,6 +583,121 @@ class Main{
     }
 }
 
+Q33.Find the maximum and minimum values of  2 given numbers a and b without using control statements and built in functions such as min() and max().
+
+import java.util.Scanner;
+class Solution2{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int a =sc.nextInt();
+		int b=sc.nextInt();
+		int c=(a+b);
+		int d=Math.abs(a-b);
+		int max=(c+d)/2;
+		int min=(c-d)/2;
+		System.out.println("The maximum value is "+ max);
+		System.out.println("The minimum value is "+min);
+	}
+}
+
+
+Q34.Check whether the given number is odd or even without using conditional statements or loops.
+
+import java.util.Scanner;
+class Solution2{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the digit");
+		int a =sc.nextInt();
+		String arr[]={"even","odd"};
+		int r=a%2;
+		System.out.println("Number is " + arr[r]);
+	}
+}
+
+	
+Q35.Add 2 numbers without using '+' operator.
+
+import java.util.Scanner;
+class Solution2{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int sum=(a*a -b*b)/(a-b);
+		System.out.println("The sum of 2 numbers is "+sum);
+	}
+}
+
+
+Q36.Subtract  2 numbers without using '-' operator.
+
+import java.util.Scanner;
+class Solution2{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int diff=a+(~b+1);
+		System.out.println("The difference of 2 numbers is "+diff);
+	}
+}
+
+Q37.Multiply  2 numbers without using '*' operator.
+import java.util.Scanner;
+class Solution2{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		//double mul=(Math.pow(a+b,2)-Math.pow(a-b,2))/4.0
+		int mul= (int)(a/((double)1/b));
+		System.out.println("The multiplication of 2 numbers is "+mul);
+	}
+}
+
+
+Q38.Odd stable sort.
+import java.util.Scanner;
+import java.util.Arrays;
+class Solution2{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size of the array");
+		int n=sc.nextInt();
+		int arr[]=new int [n];
+		System.out.println("Enter the values in the array");
+		for(int i=0;i<n;i++){
+			arr[i]=sc.nextInt();
+		}
+		int evenCounter=0;
+		
+		for(int i=0;i<arr.length;i++){
+			if(arr[i]%2==0){
+			evenCounter++;					
+			}	
+		}
+		int b[]=new int[evenCounter];
+		int j=0;
+		for(int i=0;i<n;i++){
+			if(arr[i]%2==0){
+				b[j]=arr[i];
+				j++;
+			}
+		}
+		Arrays.sort(b);
+		j=0;
+		System.out.println("Result=");
+		for(int i=0;i<n;i++){
+			if(arr[i]%2==0){
+				arr[i]=b[j];
+				j++;
+			}
+		System.out.printf("%4d",arr[i]);
+		}
+	}
+}
+				
 
 
 
